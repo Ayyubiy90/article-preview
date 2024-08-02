@@ -13,6 +13,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  min-height: 1o0vh;
+  overflow-y: auto;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
@@ -60,23 +66,27 @@ body {
   margin-bottom: 12px;
 }
 
-.article-text {
-  color: var(--desaturated-dark-blue);
-  line-height: 1.5;
-  margin-bottom: 20px;
+.author-name {
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+  margin: 0;
+  padding-right: 0.5rem;
+  margin-left: -0.5rem;
+  margin-top: 0.5rem;
+  text-align: left;
 }
 
 .article-author {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  position: relative; /* Add this */
+  justify-content: space-between;
+  position: relative;
+  margin-top: 20px;
 }
 
 .author-info {
   display: flex;
   align-items: center;
-  margin-left: 60px; /* Add this to make space for the share button */
 }
 
 .author-avatar {
@@ -94,17 +104,18 @@ body {
 .author-name {
   color: var(--very-dark-grayish-blue);
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 .article-date {
   color: var(--grayish-blue);
+  margin: 5px 0 0 0;
+  padding: 0;
 }
 
 .share-container {
-  position: absolute; /* Change this */
-  left: 0; /* Add this */
-  top: 50%; /* Add this */
-  transform: translateY(-50%); /* Add this */
+  position: relative;
 }
 
 .share-button {
@@ -133,13 +144,15 @@ body {
 
 .share-options {
   position: absolute;
-  bottom: 50px;
-  left: -20px; /* Change this from right to left */
+  bottom: 160%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--very-dark-grayish-blue);
   padding: 15px 30px;
   border-radius: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s, visibility 0.3s;
   white-space: nowrap;
@@ -149,7 +162,7 @@ body {
   content: "";
   position: absolute;
   top: 100%;
-  left: 30px; /* Change this */
+  left: 50%;
   border: 12px solid transparent;
   border-top-color: var(--very-dark-grayish-blue);
   transform: translateX(-50%);
@@ -204,8 +217,8 @@ body {
     right: -32px;
     left: -32px;
     bottom: -20px;
+    transform: none;
     border-radius: 0 0 10px 10px;
-    padding: 20px 32px;
     justify-content: flex-start;
   }
 
@@ -214,16 +227,19 @@ body {
   }
 
   .article-author {
-    padding-left: 0; /* Add this */
+    flex-wrap: nowrap;
+  }
+
+  .article-author {
+    flex-wrap: wrap; /* Allow wrapping on small screens */
   }
 
   .author-info {
-    margin-left: 0; /* Reset this for mobile */
+    flex: 1;
   }
 
   .share-container {
-    position: static; /* Change this back to static for mobile */
-    margin-left: auto; /* Add this to push it to the right */
+    position: static;
   }
 
   .share-button {
