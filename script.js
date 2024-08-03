@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "hidden"
       )
         ? "20px"
-        : "88px";
+        : 0;
     }
   });
 

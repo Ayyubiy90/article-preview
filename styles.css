@@ -218,6 +218,7 @@ body {
 
   .article-content {
     padding: 36px 32px 20px;
+    position: relative;
   }
 
   .article-title {
@@ -256,6 +257,14 @@ body {
     align-items: center;
     justify-content: flex-start;
     z-index: 4;
+  }
+
+  .share-button.active ~ .share-options {
+    bottom: 0;
+  }
+
+  .share-button.active ~ .article-content {
+    padding-bottom: 20px !important;
   }
 
   .share-options::after {
