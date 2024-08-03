@@ -1,6 +1,3 @@
-Here's an edited version of the README with added emojis and a more professional tone:
-
-```markdown
 # Frontend Mentor - Article Preview Component Solution 🖼️
 
 This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -20,7 +17,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ## Overview 🌟
 
-### The Challenge
+### The Challenge 🙂
 
 Users should be able to:
 
@@ -29,7 +26,21 @@ Users should be able to:
 
 ### Screenshot 📸
 
-![](./screenshot.jpg)
+### Desktop Preview
+
+![Desktop Preview](./preview/Screenshot%20(31).png)
+
+### Desktop Preview Active
+
+![Desktop Preview active](./preview/Screenshot%20(32).png)
+
+### Mobile Preview
+
+![Mobile Preview](./preview/mobile-design.jpg)
+
+### Mobile Preview Active
+
+![Mobile Preview active](./preview/mobile-active-state.jpg)
 
 ### Links 🔗
 
@@ -75,6 +86,12 @@ In future projects, I aim to:
 
 ## Author 👨‍💻
 
-- Website - [Abdullah](https://github.com/Ayyubiy90)
-- Frontend Mentor - [@Ayyubiy90](https://www.frontendmentor.io/profile/Ayyubiy90)
-- Twitter - [@Ayyubiy90](https://www.twitter.com/Ayyubiy90)
+- Website - [Abdullah](https://www.your-site.com)
+- LinkedIn - [Abdullah Abdurazaq](https://www.linkedin.com/in/abdullah-a-2940b7260/)
+- Frontend Mentor - [Ayyubiy90](https://www.frontendmentor.io/profile/Ayyubiy90)
+- Twitter - [ayyubiy10](https://www.twitter.com/ayyubiy10)
+- Instagram - [ayyubiy_10](https://www.instagram.com/ayyubiy_10)
+
+## Acknowledgments 🙏
+
+A special thank you to Frontend Mentor for providing this challenge. I also appreciate the community for their inspiration and support!
