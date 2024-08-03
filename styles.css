@@ -176,7 +176,7 @@ body {
 }
 
 .article-preview {
-    overflow: visible;
+  overflow: visible;
 }
 
 .share-options a {
@@ -200,10 +200,11 @@ body {
   font-weight: bolder;
 }
 
-.attribution a:hover{
-    color: hsl(214, 17%, 51%);
+.attribution a:hover {
+  color: hsl(214, 17%, 51%);
 }
 
+/* Mobile responsive */
 @media (max-width: 768px) {
   .article-preview {
     flex-direction: column;
@@ -223,25 +224,9 @@ body {
     font-size: 16px;
   }
 
-  .share-options {
-    right: -32px;
-    left: -32px;
-    bottom: -20px;
-    transform: none;
-    border-radius: 0 0 10px 10px;
-    justify-content: flex-start;
-  }
-
-  .share-options::after {
-    display: none;
-  }
-
   .article-author {
     flex-wrap: nowrap;
-  }
-
-  .article-author {
-    flex-wrap: wrap;
+    padding-bottom: 20px;
   }
 
   .author-info {
@@ -253,7 +238,44 @@ body {
   }
 
   .share-button {
-    position: relative;
-    z-index: 3;
+    position: absolute;
+    right: 13px;
+    bottom: 20px;
+    z-index: 5;
+  }
+
+  .share-options {
+    position: absolute;
+    left: -33px;
+    right: -33px;
+    bottom: 0;
+    background-color: var(--very-dark-grayish-blue);
+    padding: 20px 32px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 4;
+  }
+
+  .share-options::after {
+    display: none;
+  }
+
+  .share-options.hidden {
+    display: none;
+  }
+
+  .share-options p,
+  .share-options a {
+    color: var(--light-grayish-blue);
+  }
+
+  .share-button.active {
+    background-color: var(--desaturated-dark-blue);
+  }
+
+  .share-button.active path {
+    fill: white;
   }
 }
