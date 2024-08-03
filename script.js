@@ -7,14 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.stopPropagation();
     shareOptions.classList.toggle("hidden");
     shareButton.classList.toggle("active");
-
-    if (window.innerWidth <= 768) {
-      articleContent.style.paddingBottom = shareOptions.classList.contains(
-        "hidden"
-      )
-        ? "20px"
-        : 0;
-    }
+    articleContent.classList.toggle("share-active");
   });
 
   // Close share options when clicking outside
@@ -25,18 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
       shareOptions.classList.add("hidden");
       shareButton.classList.remove("active");
-      if (window.innerWidth <= 768) {
-        articleContent.style.paddingBottom = "20px";
-      }
-    }
-  });
-
-  // Adjust layout on window resize
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 768) {
-      articleContent.style.paddingBottom = "20px";
-    } else if (!shareOptions.classList.contains("hidden")) {
-      articleContent.style.paddingBottom = "88px";
+      articleContent.classList.remove("share-active");
     }
   });
 });

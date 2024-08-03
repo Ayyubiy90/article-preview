@@ -217,7 +217,7 @@ body {
   }
 
   .article-content {
-    padding: 36px 32px 20px;
+    padding: 36px 32px 0;
     position: relative;
   }
 
@@ -257,6 +257,12 @@ body {
     align-items: center;
     justify-content: flex-start;
     z-index: 4;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+  }
+
+  .share-active .share-options {
+    transform: translateY(0);
   }
 
   .share-button.active ~ .share-options {
